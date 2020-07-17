@@ -11,8 +11,6 @@ package com.shihuc.up.infra.redis;
 //import javax.annotation.PostConstruct;
 //
 ///**
-// * @Author: chengsh05
-// * @Date: 2018/12/19 12:19
 // *
 // * 配置利用redis实现session共享，基于springsession
 // */

@@ -14,10 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/11 9:51
- */
 @Service("dijPointService")
 public class DijPointServiceImpl implements IDijPointService {
 

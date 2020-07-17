@@ -6,8 +6,6 @@ package com.shihuc.up.infra.redis;
 //import javax.servlet.http.HttpServletRequest;
 //
 ///**
-// * @Author: chengsh05
-// * @Date: 2018/12/19 12:29
 // *
 // * 遇到奇怪问题，在这里文件里面@Value取不到值，待解。。。
 // *

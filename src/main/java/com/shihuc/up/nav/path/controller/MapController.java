@@ -2,6 +2,7 @@ package com.shihuc.up.nav.path.controller;
 
 import com.shihuc.up.nav.path.model.DijPoint;
 import com.shihuc.up.nav.path.service.IDijPointService;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -12,10 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/11 10:16
- */
 @Controller
 @RequestMapping("/path")
 public class MapController {
@@ -33,10 +30,16 @@ public class MapController {
 
     @RequestMapping("/go")
     @ResponseBody
-    public List<DijPoint> go(HttpServletRequest req) {
-        int src = Integer.valueOf(req.getParameter("srcId"));
-        int dst = Integer.valueOf(req.getParameter("dstId"));
-        logger.info("src: " + src + ", dst: " + dst);
+    public List<DijPoint> go(String srcId,String dstId) {
+        logger.info("src= " + srcId + ", dst= " + dstId);
+        if(StringUtils.isEmpty(srcId)){
+            return null;
+        }
+        if(StringUtils.isEmpty(dstId)){
+            return null;
+        }
+        int src = Integer.valueOf(srcId);
+        int dst = Integer.valueOf(dstId);
         List<DijPoint> paths = pointService.calcNearestPath(src, dst);
         return  paths;
     }

@@ -16,10 +16,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/11 10:07
- */
 @Controller
 @RequestMapping("/path")
 public class PointController {

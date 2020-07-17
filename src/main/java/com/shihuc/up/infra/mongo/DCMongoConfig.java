@@ -10,12 +10,9 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/10/28 9:55
- */
-@Configuration
-@EnableMongoRepositories(mongoTemplateRef="dcMongoTemplate")
+
+//@Configuration
+//@EnableMongoRepositories(mongoTemplateRef="dcMongoTemplate")
 public class DCMongoConfig {
 
     @Bean

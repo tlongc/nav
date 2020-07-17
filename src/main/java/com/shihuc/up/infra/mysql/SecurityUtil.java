@@ -6,10 +6,6 @@ import sun.misc.BASE64Encoder;
 import java.io.UnsupportedEncodingException;
 
 /**
- * @author chengsh05
- *
- * @Created: 2016-10-17
- * 
  * @Description
  * 
  * 				为了解决数据库连接时，数据库密码明文存在安全隐患的问题，对数据库密码进行加密处理。 逻辑很简单：

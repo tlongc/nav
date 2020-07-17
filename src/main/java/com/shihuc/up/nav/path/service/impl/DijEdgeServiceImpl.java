@@ -8,10 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/11 9:51
- */
 @Service("dijEdgeService")
 public class DijEdgeServiceImpl implements IDijEdgeService {
     @Autowired

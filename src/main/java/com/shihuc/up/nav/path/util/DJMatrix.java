@@ -2,10 +2,6 @@ package com.shihuc.up.nav.path.util;
 
 import java.util.Stack;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/9 10:25
- */
 public class DJMatrix {
 
     private static int INF = Integer.MAX_VALUE;

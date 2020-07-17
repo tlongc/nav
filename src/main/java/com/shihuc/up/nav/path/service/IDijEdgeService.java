@@ -4,10 +4,6 @@ import com.shihuc.up.nav.path.model.DijEdge;
 
 import java.util.List;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/12/11 9:50
- */
 public interface IDijEdgeService {
 
     int deleteByPrimaryKey(Integer id);

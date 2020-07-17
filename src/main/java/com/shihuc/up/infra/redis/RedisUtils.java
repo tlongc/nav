@@ -1,10 +1,5 @@
 package com.shihuc.up.infra.redis;
 
-/**
- * @Author: chengsh05
- * @Date: 2019/7/23 8:12
- */
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -18,8 +13,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * redis 工具类
  *
- * @author simon
- * @date 2018-11-28 10:35
  **/
 @Component
 public class RedisUtils {

@@ -5,11 +5,6 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Properties;
 
-/**
- * @author chengsh05
- * @Date: 2018/12/19 9:56
- *
- */
 
 enum ACTION {
 	ENC, DEC;
