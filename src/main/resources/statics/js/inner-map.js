@@ -117,7 +117,8 @@ function createEdge(zr, je) {
             y2:tpoint.y
         },
         style: {
-            stroke:'black'
+            stroke:'black',
+            lineWidth:1
         }
     }).on("mousedown", function(ev){
         if(ev.which == 3) { //右键
@@ -151,7 +152,7 @@ function createPoint(zr, pos) {
         shape: {
             cx: 0,
             cy: 0,
-            r: 10
+            r: 7
         },
         position: [
             pos.pointx,
@@ -174,7 +175,7 @@ function createPoint(zr, pos) {
     }).on('mouseout', function() {
         this.animateTo({
             shape: {
-                r: 10
+                r: 7
             },
             style: {
                 stroke: 'green',
@@ -235,11 +236,12 @@ function createText(zr, pos) {
     var posText = new zrender.Text({
         style: {
             stroke: 'blue',
-            text: "[" + pos.id + "] (" + pos.pointx + "," + pos.pointy + ")",
-            fontSize: '11',
-            textAlign:'center'
+            /*text: "[" + pos.id + "] (" + pos.pointx + "," + pos.pointy + ")",*/
+            text: "[" + pos.id + "]",
+            fontSize: '10',
+            /*textAlign:'center',*/
         },
-        position: [pos.pointx, pos.pointy + 13]
+        position: [pos.pointx+10, pos.pointy-5]
     });
     zr.add(posText);
     textMap[pos.id] = posText;

@@ -10,6 +10,9 @@
 #container{
     height: 700px;
     border: 3px dashed #ccc;
+    background-image: url("../image/熙麦(嘉兴)一楼.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 	/*margin: 10 auto;*/
 }
 #clearBtn, span{
@@ -17,14 +20,14 @@
 }
 </style>
 <body>
-<h1>找最短路径游戏</h1>
+<h1>园区线路规划</h1>
 <span>前端技术参考资料：https://ecomfe.github.io/zrender-doc/public/api.html</span><br/>
 <span style="color: #44bb99;">说明：1）左键单击创建节点，左键按下拖动到终点实现划线；2）右键单击删除节点/边；3）选择起点/终点状态后，中键选择起点/终点</span><br/>
 <button id="clearBtn">清除所有点</button>
 <label><input name="demo" type="radio" value="st"/>选起点</label>
 <label><input name="demo" type="radio" value="ed"/>选终点</label>
-<button id="nearest">开始游戏</button>
-<button id="restgame">重新游戏</button>
+<button id="nearest">开始规划路线</button>
+<button id="restgame">重新规划路线</button>
 <div id="container"></div>
 <script src="../js/jquery-2.1.1.min.js"></script>
 <script src="../js/zrender.min.js"></script>
